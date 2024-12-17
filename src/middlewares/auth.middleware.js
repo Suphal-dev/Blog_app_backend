@@ -4,7 +4,7 @@ import { ApiError } from "../utils/ApiError.js";
 import jwt from "jsonwebtoken"
 import { User } from "../models/user.model.js";
 
-
+////need to work on this middleware with cookies
 const verifyJwtToken=asyncHandler(async(req,res,next)=>{
 
 

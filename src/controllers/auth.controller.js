@@ -147,19 +147,6 @@ const validateOtpController=asyncHandler(async(req,res)=>{
 
     
     
-   ///accessing the token from header
-
-    // const otpAuth=req.headers["authorization"]
-    // console.log("otpAuth",otpAuth)
-    // if(!otpAuth){
-    //     throw new ApiError(400,"otp auth  is missing")
-    // }
-
-    // const otpToken=otpAuth.split(" ")[1]
-
-
-
-    
 
 
     const decodedToken=jwt.verify(otpToken,process.env.OTP_TOKEN_SECRET)

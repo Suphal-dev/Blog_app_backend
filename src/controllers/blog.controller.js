@@ -187,20 +187,6 @@ const getOwnBlogsController=asyncHandler(async(req,res)=>{
 
 
 
-// const getOwnBlogsController=asyncHandler(async(req,res)=>{
-    
-//     const id=req.user;
-
-//     const ownBlogs=await Blogs.find({author:id}).populate("author","name").exec()
-
-//     if(!ownBlogs){
-//         throw new ApiError(400,"blogs not found")
-//     }
-
-//     return res.status(200).json(new ApiResponse(200,{ownBlogs,length:ownBlogs.length},"own blogs fetched successffully"))
-
-
-// })
 
 
 const getBlogsByPageController=asyncHandler(async(req,res)=>{
